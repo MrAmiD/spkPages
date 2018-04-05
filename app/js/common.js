@@ -30,6 +30,9 @@ function trigerSliderPrev(sliderSelectorClick, sliderSelectorChange, varthis){//
     sliderClick[0].slick.slickGoTo(parseInt(index));
 }
 
+function scrollToElem(selector) {
+    $("html, body").animate({ scrollTop: $(selector).offset().top - 120}, 600);
+}
 
 $(document).on('click', '.vertRow', function () {
     console.log('click');
@@ -167,4 +170,8 @@ $(function() {
         //bugfix fixed menu 3 END
         $("#my-header").css({ top: 0});
     });
+    
+//    Contact page start
+//    Contact page end
+    
 });
