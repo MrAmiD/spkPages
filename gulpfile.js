@@ -70,8 +70,19 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('sass2', function() {
+	return gulp.src('app/sassSingle/**/*.sass')
+	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
+	.pipe(rename({suffix: '.min', prefix : ''}))
+	.pipe(autoprefixer(['last 15 versions']))
+	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+	.pipe(gulp.dest('app/css'))
+	.pipe(browserSync.reload({stream: true}));
+});
+ 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch('app/sassSingle/**/*.sass', ['sass2']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
