@@ -1,0 +1,432 @@
+@import "vars"
+=xxl-width($columnCount)
+  flex: 0 0 ((100%/18)*$columnCount)
+  max-width: ((100%/18)*$columnCount)
+/*==========  Desktop First  ==========*/
+
+
+@media only screen and (max-width : 1850px)
+  .map-canva>div
+    right: 496px!important
+  .build-info-cc
+    .info-b
+      &.js-area1
+        left: 483px
+        top: 218px
+      &.js-area2
+        left: 379px
+        top: 383px
+      &.js-area3
+        left: 215px
+        top: 439px
+      &.js-area4
+        left: 277px
+        top: 362px
+      &.js-area5
+        left: 347px
+        top: 271px
+      &.js-area6
+        left: 542px
+        top: 271px
+      &.js-area7
+        left: 672px
+        top: 186px
+      &.js-area8
+        left: 698px
+        top: 266px
+      &.js-area9
+        left: 698px
+        top: 340px
+      &.js-area10
+        left: 662px
+        top: 409px
+//Extra large: <maxWidth
++media-breakpoint-down(xl)
+  .mainmap-cc
+    .title-map
+      left: 30px
+      h1
+        font-size: 36px
+        .h2
+          font-size: 54px
+    .price-low
+      left: 30px
+      font-size: 35px
+    .priceLow-cc .h2
+      font-size: 70px
+//Large: <1200px
++media-breakpoint-down(lg)
+  .secTrigger
+    display: none
+  .buildMonth-sec .tabs-c
+    flex-wrap: wrap
+  .remont-sec .rem-cont .item-rem
+    margin-bottom: 10px
+  .teck-cont .citata
+    margin-top: 30px
+  .gallery-sec .slider-prev .slider-item img
+    height: 100%
+  .factors-slider a img
+    width: 100%
+    object-fit: cover
+  .factors-slider .f-item
+    margin: 5px
+  .features-slider .item-c .item-f
+    align-items: flex-start
+  .feat-slider
+    border-top: solid 5px $accent
+    margin-top: 57px
+  .main-map>.container
+    overflow: visible
+  .mainmap-cc
+    .txt-accent
+      color: $accent
+    .get-ex
+      display: none
+    .build-info-cc
+      display: none
+    .priceLow-cc
+      display: none
+    .map-canva
+      display: none
+    .title-map
+      position: relative
+      h1
+        color: $dark
+        .h2
+          color: $dark
+          text-transform: uppercase
+  .bx_breadcrumbs
+    margin-top: 30px
+  #my-header .lvl2
+    .container.standart
+      display: none
+  .contacts-c .callback-b
+    display: flex
+    align-items: center
+    .btn-accent
+      padding: 10px
+    .menu-m-b
+      margin-left: 10px
+  .lvl1-r
+    align-items: center
+  #my-footer
+    .usr-i
+      margin-top: 10px
+    .socials
+      margin-top: 0px
+//Medium: <992px sm
++media-breakpoint-down(md)
+  .cosmos-sec .btn-accent2
+    z-index: 1
+  .gallery-sec .slider-prev .slider-item a
+    height: 100%
+  .vertical-slider
+    display: none
+  .gallery-sec .slider-prev .slider-item
+    height: 250px
+  .features-slider .item-c .item-f p
+    padding-right: 10px
+  .content
+    table
+      overflow-x: scroll
+      width: 100%
+      display: block
+      tbody
+        display: block
+        min-width: 500px
+        width: 100%
+  .contacts-c .callback-b .link-t
+    display: none
+  .contacts-c .callback-b .btn-accent
+    display: block
+  #my-header .discr
+    font-size: 22px
+  .contacts-c .callback-b
+    text-align: right
+    a
+      text-align: right
+
+//Small: <768px
++media-breakpoint-down(sm)
+  .map-c .group-r
+    margin-top: 136px
+  .mainmap-cc .title-map
+    left: unset
+    top: unset
+  .feat-slider
+    margin-top: 0px
+  .contacts-c
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 15px
+    .callback-b
+      margin-bottom: 0px
+      order: 3
+    .phone
+      margin-bottom: 0px
+  .mainmap-cc .title-map h1
+    font-size: 16px
+  .mainmap-cc .title-map h1 .h2
+    font-size: 24px
+  .mainmap-cc .title-map .fire-logo
+    min-width: 132px
+//Extra small: 576px
++media-breakpoint-down(xs)
+  .fixed-elem
+    display: none
+  #mapInfo
+    position: relative
+    order: 2
+    overflow: hidden
+    max-width: 80vh
+  .map-c
+    height: auto
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+    .group-r
+      display: none
+    .object-otput
+      top: 0px
+    .container
+      padding: 0px
+  .fixed-elem-left
+    display: none
+  .buildMonth-sec
+    padding-bottom: 0px
+  .slider-feedBak
+    margin-top: 15px
+  .how-buy-section
+    padding-bottom: 0px
+  .feedback-sec .standart
+    padding-bottom: 0px
+  .feedback-sec
+    padding-top: 0px
+    padding-bottom: 0px
+  .section-moto.gallery-sec .standart .h2
+    margin-bottom: 30px
+  .cosmos-sec
+    padding: 30px 0px
+  .gal-i
+    &:after
+      content: "\f0b2"
+      font-size: 20px
+      font-family: 'FontAwesome'
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 40px
+      height: 40px
+      z-index: 10
+      background: $accent
+      color: #FFFFFF
+      border-radius: 100px
+      pointer-events: none
+  .remont-sec
+    padding-top: 0px
+    padding-bottom: 0px
+  .video-reviews .standart
+    padding: 30px 15px
+  .technology-sec
+    padding-top: 0px
+  .infrostructure
+    padding-top: 0px
+    padding-bottom: 0px
+  .section-moto.factors .standart .h2
+    margin-bottom: 25px
+  .bg-sec
+    min-height: 1px
+    padding: 0px
+  .section-moto.factors .standart
+    padding: 30px 15px!important
+  .feat-slider
+    padding-bottom: 0px
+    display: none
+  .about-sec
+    border-top: solid 1px $grey
+    padding-bottom: 0px
+  .section-moto.factors .standart
+    padding: 50px 15px
+  .map-c .btn-trigger-cc
+    width: 100%
+  .map-c .btn-trigger-cc .btn-trigger
+    margin-left: 0px
+    margin-right: 0px
+    white-space: inherit
+  .cosmos-sec .bg-white .h2
+    margin-bottom: 0px
+  .cosmos-sec .bg-white .btn-accBorder
+    margin-right: 0px
+  .cosmos-sec .bg-white
+    padding: 15px
+  .slider-plan .prev.doneBuild:after, .slider-plan .prev.soonBuild:after
+    height: 40px
+    width: 200px
+    top: 21px
+  .slider-plan .bot-c
+    padding: 15px
+    padding-bottom: 15px
+  .slider-plan .btn-c
+    flex-direction: column
+  .slider-plan .btn-c a
+    width: 100%
+  .slider-plan .prev
+    height: 250px
+  .video-reviews .standart iframe
+    height: auto
+  .section-moto .h2
+    font-size: 24px
+  .section-moto.gallery-sec .standart
+    padding: 30px 15px
+    padding-bottom: 0px
+  .tabs-c
+    flex-wrap: wrap
+  .cosmos-sec .cosmoBoy
+    display: none
+  .mainmap-cc .title-map .fire-logo
+    display: none
+  .mainmap-cc .title-map
+    padding: 30px 0px
+  .docs-sec .tabs-c
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 15px
+  .docs-sec .tabs-c .t-item
+    margin-right: 0px
+    margin-bottom: 15px
+  .docs-sec .standart
+    padding: 15px
+  .contacts-c
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-end
+    .phone
+      margin-bottom: 10px
+    .socials
+      margin-bottom: 10px!important
+  #my-header .discr
+    font-size: 14px
+  .socials .item-sc
+    margin-left: 6px
+  #my-footer
+    border-top: solid 1px $grey
+/*==========  Mobile First  ==========*/
+
+//Extra small: >576px
++media-breakpoint-up(xs)
+/**/
+//Small: >576px
++media-breakpoint-up(sm)
+/**/
+
+//Medium: >768px
++media-breakpoint-up(md)
+/**/
+
+
+
+//Large: >992px
++media-breakpoint-up(lg)
+/**/
+
+//Extra large: >1200px
++media-breakpoint-up(xl)
+  .container
+    width: 1170px
+    max-width: 100%
+  .menu-m-b
+    display: none
+
+@media only screen and (min-width : 1850px)
+  //my custom grid
+  .mym-cont
+    display: none!important
+  #menu-btn
+    display: none
+  .main-menu
+    display: block
+  .container
+    width: 1753px
+    max-width: 100%
+    &.standart
+      width: 1170px
+  .col-xxl-1
+    +xxl-width(1)
+  .col-xxl-2
+    +xxl-width(2)
+  .col-xxl-3
+    +xxl-width(3)
+  .col-xxl-4
+    +xxl-width(4)
+  .col-xxl-5
+    +xxl-width(5)
+  .col-xxl-6
+    +xxl-width(6)
+  .col-xxl-7
+    +xxl-width(7)
+  .col-xxl-8
+    +xxl-width(8)
+  .col-xxl-9
+    +xxl-width(9)
+  .col-xxl-10
+    +xxl-width(10)
+  .col-xxl-11
+    +xxl-width(11)
+  .col-xxl-12
+    +xxl-width(12)
+  .col-xxl-13
+    +xxl-width(13)
+  .col-xxl-14
+    +xxl-width(14)
+  .col-xxl-15
+    +xxl-width(15)
+  .col-xxl-16
+    +xxl-width(16)
+  .col-xxl-17
+    +xxl-width(17)
+  .col-xxl-18
+    +xxl-width(18)
+
+  .offset-xxl-1
+    +m-offset-xxl(1)
+  .offset-xxl-2
+    +m-offset-xxl(2)
+  .offset-xxl-3
+    +m-offset-xxl(3)
+  .offset-xxl-4
+    +m-offset-xxl(4)
+  .offset-xxl-5
+    +m-offset-xxl(5)
+  .offset-xxl-6
+    +m-offset-xxl(6)
+  .offset-xxl-7
+    +m-offset-xxl(7)
+  .offset-xxl-8
+    +m-offset-xxl(8)
+  .offset-xxl-9
+    +m-offset-xxl(9)
+  .offset-xxl-10
+    +m-offset-xxl(10)
+  .offset-xxl-11
+    +m-offset-xxl(11)
+  .offset-xxl-12
+    +m-offset-xxl(12)
+  .offset-xxl-13
+    +m-offset-xxl(13)
+  .offset-xxl-14
+    +m-offset-xxl(14)
+  .offset-xxl-15
+    +m-offset-xxl(15)
+  .offset-xxl-16
+    +m-offset-xxl(16)
+  .offset-xxl-17
+    +m-offset-xxl(17)
+  .offset-xxl-18
+    +m-offset-xxl(18)

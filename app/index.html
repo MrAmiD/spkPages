@@ -1,0 +1,3405 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>☁ MotoSky</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	 <!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<!-- Web Font / @font-face : BEGIN -->
+	<!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+	<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+	<!--[if mso]>
+	<style>
+		* {
+			font-family: sans-serif !important;
+		}
+	</style>
+	<![endif]-->
+
+	<!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+	<!--[if !mso]><!-->
+	<!-- insert web font reference, eg: <link href='https://praweb.ru/theme/fonts/main/fonts.css' rel='stylesheet' type='text/css'> -->
+	<!--<![endif]-->
+
+	<!-- Web Font / @font-face : END -->
+
+</head>
+
+<body>
+
+<!--Top Arrow start-->
+<a href="javascript:" id="return-to-top">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<!--Top Arrow end-->
+
+<!--todo Переделать этот блок, возможно прикрепить его к верху страницы, либо сделать burger с mmneu в вверху справа-->
+<div class="secTrigger">
+	<ul>
+		<li data-trigger=".about-sec" cont="О комплексе">
+			<a onmouseover="" onmouseout="" style="background: red;" href="javascript:void(0)" cont="О комплексе" >
+				1
+			</a>
+		</li>
+		<li data-trigger=".factors" cont="Факторы комфорта">
+			<a onmouseover="$(this).css({'background':'black', 'color':'#ffffff'})" onmouseout="$(this).css({'background':'#0097d8', 'color':'#ffffff'})" href="javascript:void(0)" cont="Факторы комфорта">
+				2
+			</a>
+		</li >
+		<li data-trigger='.infrostructure' cont="Инфраструктура">
+			<a onmouseover="" onmouseout="" href="javascript:void(0)" cont="Инфраструктура">
+				3
+			</a>
+		</li>
+		<li data-trigger='.gallery-sec' cont="Двор">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Двор">
+				4
+			</a>
+		</li>
+		<li data-trigger='.technology-sec' cont="Технологии строительства">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Технологии строительства">
+				5
+			</a>
+		</li>
+		<li data-trigger='.video-reviews' cont="Видеообзор">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Видеообзор">
+				6
+			</a>
+		</li>
+		<li data-trigger=".remont-sec" cont="Отделка">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Отделка">
+				7
+			</a>
+		</li>
+		<li data-trigger=".plan-sec" cont="Планировки">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Планировки">
+				8
+			</a>
+		</li >
+		<li data-trigger='.akcii-sec' cont="Акции">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Акции">
+				9
+			</a>
+		</li>
+		<li data-trigger='.how-buy-section' cont="Как купить">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Как купить">
+				10
+			</a>
+		</li>
+		<li data-trigger='.feedback-sec' cont="Отзывы">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Отзывы">
+				11
+			</a>
+		</li>
+		<li data-trigger='.buildMonth-sec' cont="Ход строительства">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Ход строительства">
+				12
+			</a>
+		</li>
+		<li data-trigger='.docs-sec' cont="Документы">
+			<a onmouseover="" onmouseout=""  href="javascript:void(0)" cont="Документы">
+				13
+			</a>
+		</li>
+	</ul>
+</div>
+
+
+<!--todo Меню, 2й уровень не влазят полные названия на мобильной веерсии-->
+
+<div id="my-header">
+	<div class="container standart lvl1">
+		<div class="row lvl1-r">
+			<div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+				<a href="/" class="logo-c">
+					<img src="img/spk_logo.png" alt="">
+				</a>
+			</div>
+			<div class="col-8 col-sm-9 col-md-5 col-lg-5 col-xl-5">
+				<div class="discr">
+					Квартиры от застройщика <br>
+					в ЖК МотовилихинSKY
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+				<div class="contacts-c">
+					<div class="item-c phone">
+						+7 (342) <b>214 64 44</b>
+					</div>
+					<div class="item-c callback-b">
+						<a href="javascript:void(0)" class="link-t">
+							ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+						</a>
+						<a href="javascript:void(0)" class="btn-accent">
+							Заказать звонок
+						</a>
+						<div class="menu-m-b">
+							<a href="#my-menu" class="hamburger hamburger--squeeze js-hamburger" type="button" id="menu-btn">
+								 <span class="hamburger-box">
+									  <span class="hamburger-inner"></span>
+								 </span>
+							</a>
+							<nav id="my-menu">
+							</nav>
+						</div>
+					</div>
+					<div class="item-c socials">
+						<div class="item-sc">
+							<a href="">
+								<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="20px" height="11px">
+									<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+											d="M19.182,8.891 C18.567,8.218 17.911,7.580 17.218,6.983 C16.620,6.401 16.572,6.077 17.063,5.424 C17.580,4.719 18.149,4.012 18.666,3.311 C19.201,2.677 19.629,1.964 19.934,1.200 C20.089,0.697 19.959,0.470 19.416,0.395 C19.323,0.374 19.227,0.366 19.132,0.370 L15.972,0.370 C15.631,0.344 15.319,0.555 15.222,0.873 C15.041,1.301 14.860,1.753 14.654,2.205 C14.187,3.217 13.559,4.150 12.793,4.971 C12.612,5.147 12.431,5.374 12.146,5.272 C11.784,5.147 11.681,4.568 11.681,4.367 L11.681,0.820 C11.603,0.317 11.500,0.091 10.982,-0.010 L7.671,-0.010 C7.317,-0.011 6.983,0.146 6.766,0.417 C6.638,0.571 6.585,0.669 6.869,0.719 C7.377,0.794 7.763,1.202 7.800,1.700 C7.921,2.551 7.938,3.411 7.852,4.265 C7.831,4.516 7.770,4.762 7.671,4.994 C7.515,5.371 7.257,5.421 6.921,5.221 C6.628,5.011 6.382,4.746 6.197,4.441 C5.420,3.358 4.769,2.194 4.257,0.971 C4.146,0.630 3.823,0.395 3.455,0.390 C2.498,0.367 1.566,0.367 0.610,0.393 C0.041,0.393 -0.140,0.669 0.092,1.172 C1.080,3.421 2.311,5.563 3.764,7.559 C4.504,8.585 5.455,9.449 6.557,10.098 C7.829,10.776 9.275,11.082 10.722,10.978 C11.421,10.954 11.627,10.777 11.653,10.098 C11.651,9.645 11.757,9.198 11.963,8.791 C12.080,8.491 12.425,8.340 12.734,8.454 C12.802,8.479 12.865,8.517 12.920,8.564 C13.116,8.688 13.291,8.841 13.438,9.017 C13.825,9.419 14.187,9.847 14.602,10.249 C15.065,10.770 15.759,11.041 16.464,10.977 L19.438,10.977 C19.904,10.953 20.162,10.396 19.878,9.871 C19.684,9.520 19.450,9.190 19.180,8.891 L19.182,8.891 Z"/>
+								</svg>
+							</a>
+						</div>
+						<div class="item-sc">
+							<a href="">
+								<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="11px" height="20px">
+									<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+											d="M10.586,-0.005 L7.939,-0.005 C4.980,-0.005 3.075,1.921 3.075,4.915 L3.075,7.182 L0.431,7.182 C0.200,7.180 0.010,7.361 0.007,7.589 C0.007,7.591 0.007,7.594 0.007,7.596 L0.007,10.876 C0.004,11.103 0.189,11.289 0.420,11.292 C0.424,11.292 0.427,11.292 0.431,11.292 L3.078,11.292 L3.078,19.596 C3.075,19.824 3.260,20.010 3.491,20.013 C3.494,20.013 3.498,20.013 3.502,20.013 L6.971,20.013 C7.201,20.016 7.391,19.834 7.394,19.607 C7.394,19.603 7.394,19.600 7.394,19.596 L7.394,11.292 L10.489,11.292 C10.720,11.295 10.909,11.114 10.912,10.886 C10.912,10.883 10.912,10.879 10.912,10.876 L10.912,7.596 C10.894,7.371 10.709,7.194 10.480,7.182 L7.359,7.182 L7.359,5.253 C7.359,4.316 7.571,3.848 8.814,3.848 L10.585,3.848 C10.816,3.851 11.006,3.669 11.009,3.441 C11.009,3.438 11.009,3.434 11.009,3.431 L11.009,0.411 C11.012,0.185 10.827,-0.002 10.596,-0.005 C10.593,-0.005 10.590,-0.005 10.586,-0.005 Z"/>
+								</svg>
+							</a>
+						</div>
+						<div class="item-sc">
+							<a href="">
+								<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="18px" height="18px">
+									<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+											d="M16.314,0.007 L1.691,0.007 C0.764,0.019 0.016,0.768 0.003,1.694 L0.003,16.318 C0.016,17.245 0.764,17.993 1.691,18.006 L16.314,18.006 C17.241,17.993 17.989,17.245 18.001,16.318 L18.001,1.694 C17.989,0.768 17.241,0.019 16.314,0.007 ZM12.310,2.752 C12.302,2.139 12.793,1.635 13.406,1.627 C13.416,1.627 13.425,1.627 13.435,1.627 L14.841,1.627 C15.454,1.620 15.957,2.110 15.965,2.723 C15.965,2.733 15.965,2.742 15.965,2.752 L15.965,4.434 C15.973,5.047 15.482,5.550 14.869,5.559 C14.860,5.559 14.850,5.559 14.841,5.559 L13.431,5.559 C12.818,5.565 12.316,5.072 12.310,4.459 C12.310,4.451 12.310,4.442 12.310,4.434 L12.310,2.752 ZM9.002,5.033 C11.196,5.033 12.974,6.812 12.974,9.005 C12.974,11.199 11.196,12.977 9.002,12.977 C6.809,12.977 5.030,11.199 5.030,9.005 L5.030,9.005 C5.041,6.815 6.813,5.044 9.002,5.033 ZM16.314,16.879 L1.691,16.879 C1.384,16.883 1.132,16.638 1.129,16.331 C1.128,16.327 1.128,16.321 1.129,16.317 L1.129,7.635 L4.116,7.635 C3.989,8.081 3.918,8.541 3.905,9.005 C3.942,11.820 6.254,14.072 9.069,14.035 C11.832,13.998 14.062,11.767 14.099,9.005 C14.100,8.540 14.029,8.078 13.888,7.635 L16.876,7.635 L16.876,16.317 C16.880,16.624 16.635,16.876 16.328,16.879 C16.323,16.879 16.319,16.879 16.314,16.879 Z"/>
+								</svg>
+							</a>
+						</div>
+						<div class="item-sc">
+							<a href="">
+								<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="16px" height="19px">
+									<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+											d="M15.702,17.225 C15.527,18.018 14.861,18.613 14.042,18.709 C12.040,18.956 10.022,19.055 8.005,19.006 C5.986,19.057 3.967,18.959 1.963,18.713 C1.139,18.630 0.465,18.029 0.303,17.229 C0.052,16.008 -0.049,14.761 0.001,13.515 C-0.049,12.271 0.053,11.026 0.303,9.805 C0.475,9.010 1.145,8.411 1.967,8.321 C3.969,8.074 5.987,7.974 8.005,8.024 C10.020,7.975 12.037,8.074 14.038,8.321 C14.862,8.404 15.536,9.005 15.698,9.805 L15.702,9.798 C15.953,11.019 16.055,12.266 16.005,13.511 C16.055,14.757 15.953,16.004 15.702,17.225 ZM4.529,9.805 L1.209,9.805 L1.209,10.992 L2.265,10.992 L2.265,17.077 L3.321,17.077 L3.321,10.992 L4.529,10.992 L4.529,9.805 ZM7.548,11.586 L6.491,11.586 L6.491,15.597 C6.190,15.890 6.190,16.039 5.888,16.039 C5.725,16.028 5.596,15.901 5.585,15.742 L5.585,11.586 L4.677,11.586 L4.677,15.742 C4.686,16.044 4.738,16.344 4.831,16.632 C4.976,16.815 5.198,16.925 5.434,16.930 C5.864,16.915 6.260,16.693 6.491,16.336 L6.491,16.928 L7.548,16.928 L7.548,11.586 ZM11.019,15.296 L11.019,13.070 C11.054,12.717 11.003,12.361 10.868,12.031 C10.736,11.719 10.452,11.496 10.113,11.438 C9.811,11.438 9.510,11.734 9.208,12.031 L9.208,9.805 L8.302,9.805 L8.302,16.777 L9.359,16.777 L9.359,16.335 C9.552,16.659 9.886,16.878 10.264,16.928 C10.717,16.928 10.868,16.632 11.019,16.335 C11.170,16.187 11.170,15.738 11.170,15.296 L11.019,15.296 ZM14.791,14.410 L14.489,14.410 L14.489,13.519 C14.553,13.100 14.444,12.672 14.187,12.331 C13.960,11.969 13.562,11.746 13.130,11.738 C12.658,11.745 12.215,11.963 11.924,12.327 C11.716,12.689 11.611,13.100 11.621,13.515 L11.621,15.443 C11.558,15.863 11.667,16.290 11.924,16.631 C12.237,16.971 12.668,17.183 13.131,17.224 C13.604,17.216 14.048,16.998 14.339,16.631 C14.490,16.335 14.641,16.335 14.641,16.038 L14.641,15.296 L13.729,15.296 L13.729,15.890 C13.582,16.038 13.578,16.187 13.280,16.187 C12.981,16.187 12.830,15.887 12.830,15.445 L12.830,14.554 L14.792,14.554 L14.791,14.410 ZM12.830,13.218 C12.830,12.773 12.978,12.476 13.280,12.476 L13.286,12.476 C13.585,12.476 13.736,12.775 13.736,13.218 L13.736,13.660 L12.830,13.660 L12.830,13.218 ZM9.808,16.335 C9.661,16.335 9.510,16.187 9.359,16.038 L9.359,12.773 C9.506,12.625 9.657,12.476 9.808,12.476 C9.959,12.476 10.111,12.775 10.111,13.218 L10.111,15.593 C10.111,16.038 10.111,16.335 9.808,16.335 ZM12.827,7.131 L12.830,7.131 L12.827,7.134 L12.827,7.131 ZM11.773,6.537 C11.496,6.843 11.125,7.051 10.717,7.131 C10.415,7.131 10.113,7.131 10.113,6.834 C9.990,6.553 9.938,6.248 9.962,5.943 L9.962,1.787 L10.868,1.787 L10.868,5.943 C10.879,6.103 11.008,6.230 11.170,6.240 C11.471,6.240 11.622,6.240 11.773,5.798 L11.773,1.790 L12.827,1.790 L12.827,7.131 L11.773,7.131 L11.773,6.537 ZM8.759,6.537 C8.532,6.899 8.134,7.123 7.702,7.131 C7.301,7.142 6.915,6.981 6.646,6.689 C6.438,6.327 6.333,5.916 6.344,5.501 L6.344,3.571 C6.344,2.978 6.344,2.681 6.645,2.386 C6.872,2.025 7.270,1.801 7.701,1.793 C8.108,1.750 8.508,1.917 8.758,2.235 C9.062,2.616 9.221,3.088 9.208,3.571 L9.208,5.352 L9.209,5.350 C9.209,5.944 9.061,6.389 8.759,6.537 ZM8.151,3.274 C8.151,2.830 8.000,2.533 7.701,2.533 C7.403,2.533 7.252,2.832 7.252,3.274 L7.252,5.649 C7.252,6.094 7.403,6.392 7.701,6.392 C8.000,6.392 8.151,6.092 8.151,5.649 L8.151,3.274 ZM4.981,7.134 L3.924,7.134 L3.924,4.314 C3.811,3.552 3.608,2.804 3.321,2.087 C3.003,1.420 2.751,0.724 2.566,0.009 L3.774,0.009 L4.529,2.681 L5.132,0.009 L6.344,0.009 L4.981,4.314 L4.981,7.134 Z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid solided-top lvl2">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="main-menu">
+						<ul>
+							<li class="item-has-children "><a target="_self" href="/apartments/"><span>Квартиры</span></a>
+								<ul class="sub-menu">
+									<li><a target="_self" href="/apartments/zhk-soldatskaya-slobodka/"><span>ЖК «Солдатская слободка» </span></a></li>
+									<li><a target="_self" href="/apartments/zhk-mmotovilihinsky/"><span>ЖК «МотовилихинSKY»</span></a></li>
+									<li><a target="_self" href="/apartments/zhk-medovyy/"><span>ЖК «Медовый»</span></a></li>
+									<li><a target="_self" href="/apartments/zhk-belye-rosy/"><span>ЖК «Белые Росы»</span></a></li>
+									<li><a target="_self" href="/apartments/zhiloy-dom-na-ul-rakitnaya-d-42/"><span>Жилой дом на ул. Ракитная, д. 42</span></a></li>
+									<li><a target="_self" href="/apartments/zhiloy-kompleks-kupecheskiy/"><span>ЖК «Купеческий»</span></a></li>
+									<li><a target="_self" href="/apartments/zhk-yubileynyy/"><span>ЖК «Юбилейный»</span></a></li>
+									<li><a target="_self" href="/apartments/ekopark-sosnovyy/"><span>ЖК «Экопарк Сосновый»</span></a></li>
+									<li><a target="_self" href="/otzyvy/"><span>Отзывы новоселов</span></a></li>
+									<li><a target="_self" href="/apartments/actions/"><span>Акции</span></a></li>
+								</ul>
+							</li>
+							<li class=""><a target="_self" href="/land/komarovo.php"><span>Коттеджи и земельные участки</span></a></li>
+							<li class=""><a target="_self" href="/commercial/"><span>Коммерческая недвижимость</span></a></li>
+							<li id="hackMomen1"><a target="_self" href="/buy/"><span>Как купить</span></a></li>
+							<li id="hackMoment"><a target="_self" href="/production/partners/"><span>Риелторам</span></a></li>
+
+							<li class="item-has-children "><a target="_self" href="/production/"><span>Товары и услуги</span></a>
+								<ul class="sub-menu">
+
+									<li><a target="_self" href="/developer/"><span>Застройщикам</span></a></li>
+
+									<li><a target="_self" href="/production/tenders/"><span>Тендеры</span></a></li>
+
+									<li><a target="_self" href="/production/zhbi/"><span>ЖБИ</span></a></li>
+
+									<li><a target="_self" href="http://domspk.ru"><span>Коттеджное домостроение</span></a></li>
+
+									<li><a target="_self" href="/production/laboratory/"><span>Лабораторные исследования</span></a></li>
+
+								</ul>
+							</li>
+
+							<li class="item-has-children "><a target="_self" href="/company/"><span>О компании</span></a>
+								<ul class="sub-menu">
+
+									<li><a target="_self" href="/company/news/"><span>Новости</span></a></li>
+
+									<li><a target="_self" href="/company/history/"><span>История компании</span></a></li>
+
+									<li><a target="_self" href="/company/management/"><span>Руководство</span></a></li>
+
+									<li><a target="_self" href="/company/review/"><span>Дипломы</span></a></li>
+
+									<li><a target="_self" href="/company/vacancy/"><span>Вакансии</span></a></li>
+
+									<li><a target="_self" href="/company/pressa-o-nas/"><span>Пресса о нас</span></a></li>
+
+									<li><a target="_self" href="/contacts/"><span>Контакты</span></a></li>
+
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="my-content">
+
+	<div class="fixed-elem">
+		<div class="btn_fix-right">
+			<a class="btn btn-primary  btn-lg" onclick="PriceFromSPK()" id="getprice_link1" data-toggle="modal" href="#getprice_form">Скачать прайс</a>
+			<a class="btn btn-primary btn-primary-link btn-lg" href="#regontour_form" data-toggle="modal">Экскурсия</a>
+		</div>
+	</div>
+
+	<div class="fixed-elem-left">
+		<div class="btn_fix-left">
+			<a class="btn btn-primary btn-lg" onclick="PriceFromSPK()" id="getprice_link2" data-toggle="modal" href="#getprice_form">Акция</a>
+			<a class="btn btn-primary btn-primary-link btn-lg" href="#regontour_form" data-toggle="modal">
+				<span class="svg-c">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						width="18px" height="13px">
+						<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+								d="M0.005,6.508 C0.014,10.093 2.926,12.997 6.522,13.005 C10.991,13.005 17.527,7.181 17.809,6.939 C18.052,6.721 18.073,6.347 17.854,6.104 C17.840,6.089 17.825,6.073 17.809,6.060 C17.527,5.815 10.994,-0.007 6.522,-0.007 C2.923,0.010 0.013,2.920 0.005,6.508 ZM9.808,6.508 C9.808,8.318 8.337,9.785 6.522,9.785 C4.707,9.785 3.235,8.318 3.235,6.508 C3.235,4.698 4.707,3.232 6.522,3.232 C8.336,3.233 9.806,4.699 9.808,6.508 Z"/>
+					</svg>
+				</span>
+				<span class="txt">
+					Расположение
+				</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="container standart">
+		<div class="row">
+			<div class="col-12">
+				<div class="bx_breadcrumbs">
+					<ul>
+						<li><a target="_self" href="/" title="Главная">Главная</a></li>
+						<li><a target="_self" href="/quarters/" title="Квартиры">Квартиры</a></li>
+						<li><span>ЖК МотовилихинSKY</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="main-map">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="mainmap-cc">
+						<div class="get-ex">
+							<a href="javascript: void(0);" class="btn-accBorder">
+								Заказать экскурсию
+							</a>
+						</div>
+						<div class="build-info-cc">
+							<div class="info-b b2 js-area1" style="background-color: #8c4d8b">
+								<p>
+									ул. Гашкова, 53, 5-9 подъезд <br>
+									II квартал 2019 г.
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b b1 js-area2" style="background-color: #8c4d8b">
+								<p>
+									ул. Целинная 49б <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b right-arr-b js-area3" style="background-color: #8c4d8b" >
+								<p>
+									ул. Целинная 49a <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b right-arr-b js-area4" style="background-color: #8c4d8b" >
+								<p>
+									ул. Целинная 47a <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b right-arr-b js-area5" style="background-color: #8c4d8b">
+								<p>
+									ул. Целинная 47 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area6" style="background-color: #8c4d8b">
+								<p>
+									ул. Целинная 45 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area7" style="background-color: #d80000">
+								<p>
+									ул. Целинная 39 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area8" style="background-color: #d80000">
+								<p>
+									ул. Целинная 41 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area9" style="background-color: #d80000">
+								<p>
+									ул. Целинная 43 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+							<div class="info-b bot-arr js-area10" style="background-color: #d80000">
+								<p>
+									ул. Целинная 43/1 <br>
+									ДОМ СДАН
+								</p>
+								<a href="" onclick="">
+									<!--Ссылка на страницу планировки-->
+									Смотреть планировки
+								</a>
+							</div>
+						</div>
+
+						<div class="container standart">
+							<div class="row">
+								<div class="col-12">
+									<div class="title-map">
+										<div class="fire-logo">
+											<img src="img/fire.png" alt="">
+										</div>
+										<h1>
+											Жилой комплекс
+											<span class="h2">
+												Мотовилихин<span class="txt-accent">SKY</span>
+											</span>
+										</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="container priceLow-cc">
+							<div class="row">
+								<div class="col-12 offset-xxl-1">
+									<div class="price-low">
+										<div class="h3">
+											Квартиры от
+										</div>
+										<div class="h2">
+											1 450 900 rub.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="map-canva">
+							<img id="mainmap" src="img/maimap.png" alt="" usemap="#Map" />
+							<map name="Map" id="Map">
+								<area alt="" id="area1" onmouseover="inMap('.js-area1');" onmouseout="outMap('.js-area1')" title="" href="#" shape="poly" coords="874,439,899,446,936,395,950,400,963,385,963,322,946,318,948,310,936,307,927,316,916,310,905,319,900,319,900,310,887,306,879,316,856,308,856,299,843,297,835,303,823,301,813,312,813,362,887,383,884,416,875,426" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area2" onmouseover="inMap('.js-area2');" onmouseout="outMap('.js-area2')" title="" href="#" shape="poly" coords="835,537,863,520,864,480,797,444,782,454,781,496,811,515,812,524" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+
+								<area alt="" id="area3" onmouseover="inMap('.js-area3');" onmouseout="outMap('.js-area3')" title="" href="#" shape="poly" coords="967,587,941,580,944,565,938,561,940,515,949,504,961,508,967,504,987,509,988,515,1005,520,1005,565,998,578,976,571" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+
+								<area alt="" id="area4" onmouseover="inMap('.js-area4');" onmouseout="outMap('.js-area4')"  title="" href="#" shape="poly" coords="1005,540,1009,540,1071,458,1072,412,1052,405,989,488,988,514,1005,518" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area5" onmouseover="inMap('.js-area5');" onmouseout="outMap('.js-area5')" title="" href="#" shape="poly" coords="1071,442,1096,452,1105,438,1122,441,1131,431,1136,366,1120,361,1117,352,1104,348,1099,357,1083,353,1073,361,1070,410,1073,413" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area6" onmouseover="inMap('.js-area6');" onmouseout="outMap('.js-area6')" title="" href="#" shape="poly" coords="1141,444,1144,401,1153,391,1288,425,1282,470,1219,577,1196,567,1200,522,1234,470" data-maphilight='{"strokeColor":"8c4d8b","strokeWidth":3,"fillColor":"8c4d8b","fillOpacity":0.2}'/>
+								<area alt="" id="area7" onmouseover="inMap('.js-area7');" onmouseout="outMap('.js-area7')" title="" href="#" shape="poly" coords="1314,405,1328,337,1332,328,1350,334,1354,326,1368,330,1370,337,1388,342,1376,411,1358,407,1352,418,1349,428,1323,421,1324,408" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+								<area alt="" id="area8" onmouseover="inMap('.js-area8');" onmouseout="outMap('.js-area8')" title="" href="#" shape="poly" coords="1348,518,1328,509,1331,501,1338,485,1352,417,1356,406,1376,414,1384,403,1400,409,1397,417,1417,423,1404,485,1386,480,1383,491,1360,486,1356,498" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+
+								<area alt="" id="area9" onmouseover="inMap('.js-area9');" onmouseout="outMap('.js-area9')"  title="" href="#" shape="poly" coords="1374,603,1392,611,1410,575,1423,502,1403,495,1402,485,1387,482,1380,491,1358,486,1354,498,1344,550,1356,553,1360,545,1382,553,1377,586" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+								<area alt="" id="area10" onmouseover="inMap('.js-area10');" onmouseout="outMap('.js-area10')" title="" href="#" shape="poly" coords="1281,610,1292,585,1328,594,1333,565,1342,550,1354,554,1360,546,1383,554,1376,595,1361,626,1327,616,1321,621" data-maphilight='{"strokeColor":"d80000","strokeWidth":3,"fillColor":"d80000","fillOpacity":0.2}'/>
+
+
+							</map>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto feat-slider">
+		<div class="container standart">
+			<div class="features-slider">
+				<div class="item-c">
+					<div class="item-f">
+						<img src="http://spk.perm.ru/upload/iblock/a17/a179c11b58e193a6e2ba7f5fd9972b74.png" alt="">
+						<p>
+							Огромный паркинг –
+							места хватит всем
+						</p>
+					</div>
+				</div>
+				<div class="item-c">
+					<div class="item-f">
+						<img src="http://spk.perm.ru/upload/iblock/a17/a179c11b58e193a6e2ba7f5fd9972b74.png" alt="">
+						<p>
+							Экологически чистый район
+							Вышка2 – максимально
+							удален от крупных предприятий
+						</p>
+					</div>
+				</div>
+				<div class="item-c">
+					<div class="item-f">
+						<img src="http://spk.perm.ru/upload/iblock/a17/a179c11b58e193a6e2ba7f5fd9972b74.png" alt="">
+						<p>
+							Собственная котельная
+							под целый микрорайон
+						</p>
+					</div>
+				</div>
+				<div class="item-c">
+					<div class="item-f">
+						<img src="http://spk.perm.ru/upload/iblock/a17/a179c11b58e193a6e2ba7f5fd9972b74.png" alt="">
+						<p>
+							Огромный паркинг –
+							места хватит всем
+						</p>
+					</div>
+				</div>
+				<div class="item-c">
+					<div class="item-f">
+						<img src="http://spk.perm.ru/upload/iblock/a17/a179c11b58e193a6e2ba7f5fd9972b74.png" alt="">
+						<p>
+							Экологически чистый район
+							Вышка2 – максимально
+							удален от крупных предприятий
+						</p>
+					</div>
+				</div>
+				<div class="item-c">
+					<div class="item-f">
+						<img src="http://spk.perm.ru/upload/iblock/a17/a179c11b58e193a6e2ba7f5fd9972b74.png" alt="">
+						<p>
+							Собственная котельная
+							под целый микрорайон
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto about-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						О комплексе
+					</h2>
+				</div>
+			</div>
+			<div class="row moto-acont">
+				<div class="col-12 col-lg-6 content">
+					<h4>Достоинства «МотовилихинSKY»</h4>
+					<ul>
+						<li>Более <b>40 вариантов планировочных решений -&nbsp;квартиры</b> на любой вкус! Вам остается только выбрать свою квартиру!
+							<br>
+						</li>
+						<li><b>Современная отделка квартиры от застройщика</b> – без лишних трудозатрат с Вашей стороны! А переехать в уже готовую квартиру можно сразу после получения ключей!
+							<br>
+						</li>
+						<li>Дома возводятся из <b>высококачественной трехслойной панели</b><b> собственного производства</b>.</li>
+						<li><b>Просторный двор без машин</b>, где&nbsp;безопасно играют дети на современных площадках. А взрослые отдыхают и занимаются спортом.</li>
+						<li><b>Выделенные просторные парковки</b> – места хватит всем!</li>
+						<li><b>Собственная котельная</b> под микрорайон. Проектная мощность 18МВт.
+							<br> Котельная автоматизирована, ее мощность полностью покрывает потребность жилого комплекса в тепловом ресурсе.</li>
+						<li><b>Новая школа</b><b> </b>на 1500 мест и<b> детский сад </b>на 280 мест запланированы к строительству в ЖК «МотовилихинSKY».</li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-6 aimg">
+					<img src="img/aboutPhoto.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto factors bg-sec">
+		<div class="img-bg" style="background-image: url('img/factors-bg.png')">
+		</div>
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Факторы комфорта
+					</h2>
+				</div>
+				<div class="col-12">
+					<div class="factors-slider">
+						<div class="f-item" cont="Яркие фасады ЖК «МотовилихинSky»">
+							<a  data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/023/02342f9fc0d3faba42939328b504fb51.jpg">
+								<img   data-lazy="http://spk.perm.ru/upload/iblock/023/02342f9fc0d3faba42939328b504fb51.jpg">
+							</a>
+						</div>
+						<div class="f-item"  cont="Яркие фасады ЖК «МотовилихинSky»">
+							<a data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/317/317cd383d75a1a61840285a69650b882.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/317/317cd383d75a1a61840285a69650b882.jpg">
+							</a>
+						</div>
+						<div class="f-item"  cont="Яркие фасады ЖК «МотовилихинSky»">
+							<a data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a6c/a6c1dbe1fd71d10377f679057fe753ed.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a6c/a6c1dbe1fd71d10377f679057fe753ed.jpg">
+							</a>
+						</div>
+						<div class="f-item"  cont="Яркие фасады ЖК «МотовилихинSky»">
+							<a  data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/023/02342f9fc0d3faba42939328b504fb51.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/023/02342f9fc0d3faba42939328b504fb51.jpg">
+							</a>
+						</div>
+						<div class="f-item"  cont="Яркие фасады ЖК «МотовилихинSky»">
+							<a data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/317/317cd383d75a1a61840285a69650b882.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/317/317cd383d75a1a61840285a69650b882.jpg">
+							</a>
+						</div>
+						<div class="f-item"  cont="Яркие фасады ЖК «МотовилихинSky»">
+							<a data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a6c/a6c1dbe1fd71d10377f679057fe753ed.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a6c/a6c1dbe1fd71d10377f679057fe753ed.jpg">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto infrostructure">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Инфраструктура
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="map-c">
+						<div id="mapInfo">
+							<!--https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/object-manager/frontend-docpage/-->
+							<!--https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/about-docpage/-->
+						</div>
+						<div class="container standart">
+							<div class="row">
+								<div class="col-12 col-lg-4">
+									<div class="map-ic">
+										<div class="map-interface">
+											<div class="object-otput">
+												<ul class="customScroll infrastructure__list" id="infrastructure__list">
+													<li class="" col="zk" label="ЖК «Мотовилихинский»" lat="58.052492842466" lon="56.349983487974" icon="http://spk.perm.ru/upload/iblock/173/173a71cf919d373f4075cf369a0ee86c.png">
+														ЖК «Мотовилихинский»								</li>
+													<li class="" col="shop" label="Универсальный магазин &quot;Берег&quot;" lat="58.063464178053" lon="56.354206518685" icon="http://spk.perm.ru/upload/iblock/f31/f316cd226429c7571b19de748a853604.png">
+														Универсальный магазин "Берег"								</li>
+													<li class="active" col="shop" label="Универсальный магазин &quot;Семья&quot;" lat="58.062409283571" lon="56.352002059703" icon="http://spk.perm.ru/upload/iblock/48e/48ea28db102baebadeedf66991ed8ccd.png">
+														Универсальный магазин "Семья"								</li>
+													<li class="" col="shop" label="Универсальный магазин &quot;Монетка&quot;" lat="58.054448852268" lon="56.353442078431" icon="http://spk.perm.ru/upload/iblock/1ad/1ad8827f17dc0d47edec1fc145a726d6.png">
+														Универсальный магазин "Монетка"								</li>
+													<li class="" col="shop" label="Магазин цветов" lat="58.063017703534" lon="56.351846491583" icon="http://spk.perm.ru/upload/iblock/943/943c258e3c67130244f5bfc1bd503da0.png">
+														Магазин цветов								</li>
+													<li class="" col="child" label="Детский сад № 415" lat="58.056813616983" lon="56.352533137091" icon="http://spk.perm.ru/upload/iblock/76b/76bca26cfe424ed6d7016e0e3da64609.png">
+														Детский сад № 415								</li>
+													<li class="" col="edu" label="Средняя общеобразовательная школа № 30" lat="58.060356504123" lon="56.355483567006" icon="http://spk.perm.ru/upload/iblock/95b/95bad8e3d3dd5e9724c14a97fd6a7cc1.png">
+														Средняя общеобразовательная школа № 30								</li>
+													<li class="" col="edu" label="Средняя общеобразовательная школа № 74" lat="58.062972214296" lon="56.359292303808" icon="http://spk.perm.ru/upload/iblock/ee8/ee8542da970d1d12ca32d9efda5162d2.png">
+														Средняя общеобразовательная школа № 74								</li>
+													<li class="" col="edu" label="Гимназия № 7" lat="58.056752596281" lon="56.350553083026" icon="http://spk.perm.ru/upload/iblock/5e1/5e1cf00eecb6628f39a2a64095fad413.png">
+														Гимназия № 7								</li>
+													<li class="" col="med" label="Поликлиника № 5, Городская детская клиническая поликлиника № 1" lat="58.062358108908" lon="56.346460615881" icon="http://spk.perm.ru/upload/iblock/0df/0df3a9ed70b0f4bd5eedb3f824ccc94c.png">
+														Поликлиника № 5, Городская детская клиническая поликлиника № 1								</li>
+													<li class="" col="med" label="Городская поликлиника № 7" lat="58.058532546621" lon="56.350252739739" icon="http://spk.perm.ru/upload/iblock/537/537e3aef8309e3acdc71dee7af0b83f0.png">
+														Городская поликлиника № 7								</li>
+													<li class="" col="med" label="Пермский клинический центр" lat="58.057828990345" lon="56.356298958548" icon="http://spk.perm.ru/upload/iblock/b69/b696d7a191681e25a247b84a9176eb5c.png">
+														Пермский клинический центр								</li>
+													<li class="" col="med" label="Аптека &quot;Планета здоровья&quot;" lat="58.061653011205" lon="56.352179085501" icon="http://spk.perm.ru/upload/iblock/462/462ea88bc5a14ef23fa78e4d92b9f4b8.png">
+														Аптека "Планета здоровья"								</li>
+													<li class="" col="med" label="Аптека &quot;Планета здоровья&quot;" lat="58.054543004673" lon="56.354103962375" icon="http://spk.perm.ru/upload/iblock/07e/07ea5f7f8d0fb95de5562de16576ac5b.png">
+														Аптека "Планета здоровья"								</li>
+													<li class="" col="med" label="Аптека &quot;Планета здоровья&quot;" lat="58.051724252971" lon="56.351579655789" icon="http://spk.perm.ru/upload/iblock/911/9118c518c47464b898976c264ef1ae2b.png">
+														Аптека "Планета здоровья"								</li>
+													<li class="" col="sport" label="Искра, ДЮСШ" lat="58.06011198284" lon="56.357125078924" icon="http://spk.perm.ru/upload/iblock/669/669e612e205a77fc6c3ff642f88df219.png">
+														Искра, ДЮСШ								</li>
+													<li class="" col="sport" label="Energy Fitness, фитнес-клуб" lat="58.06299495909" lon="56.356202399023" icon="http://spk.perm.ru/upload/iblock/cf3/cf3334c95fb13fb44d4d1f969573086d.png">
+														Energy Fitness, фитнес-клуб								</li>
+													<li class="" col="bus" label="Остановка: Микрорайон Вышка-2" lat="58.053573075088" lon="56.354437600416" icon="http://spk.perm.ru/upload/iblock/a96/a967e740069b92361aeaf5e1f54012d5.png">
+														Остановка: Микрорайон Вышка-2								</li>
+													<li class="" col="bus" label="Остановка: Ивана Франко" lat="58.063657385239" lon="56.355236803778" icon="http://spk.perm.ru/upload/iblock/e60/e60d77a9723f680335b16b0189514229.png">
+														Остановка: Ивана Франко								</li>
+													<li class="" col="bus" label="Остановка: Больница (Вышка-2)" lat="58.056357347613" lon="56.356904644861" icon="http://spk.perm.ru/upload/iblock/6a3/6a30017599bbc1ca5dc59bd802840f80.png">
+														Остановка: Больница (Вышка-2)								</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row group-r">
+								<div class="col-12 col-lg-4"></div>
+								<div class="col-12 col-lg-8 btn-trigger-ccc">
+									<div class="btn-trigger-ccv">
+										<div class="btn-trigger-cc">
+											<button class="btn-trigger" data-col="sport">
+												Спорт
+											</button>
+											<button class="btn-trigger" data-col="cafe">
+												Кафе и ректораны
+											</button>
+											<button class="btn-trigger" data-col="child">
+												Детские учреждения
+											</button>
+											<button class="btn-trigger" data-col="shop">
+												Магазины
+											</button>
+											<button class="btn-trigger" data-col="edu">
+												Образовательные учреждения
+											</button>
+											<button class="btn-trigger" data-col="bus">
+												Общественный транспорт
+											</button>
+											<button class="btn-trigger" data-col="med">
+												Аптеки
+											</button>
+											<button class="btn-trigger" data-col="all">
+												Всё
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto cosmos-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<div class="cosmo-cont">
+						<h2 class="h2">
+							Оставьте заявку <br>
+							на проведение персональной экскурсии по ЖК
+						</h2>
+						<a href="javascript:void(0)" class="btn-accent2">
+							Заказать экскурсию
+						</a>
+						<div class="cosmoBoy">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto gallery-sec bg-sec">
+		<div class="img-bg" style="background-image: url('img/factors-bg.png')">
+		</div>
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<div class="tabs-c">
+						<div class="t-item">
+							<a href="javascript:void(0);">
+								Парковка
+							</a>
+						</div>
+						<div class="t-item active" >
+							<a href="javascript:void(0);">
+								Двор
+							</a>
+						</div>
+						<div class="t-item">
+							<a href="javascript:void(0);">
+								Общий вид
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="tab-cont">
+				<div class="row">
+					<div class="col-12 col-lg-8 col-xl-9">
+						<!--Добавить Fancybox gallery при клике на слайды-->
+						<div class="slider-prev">
+							<div class="slider-item">
+								<a  class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+									<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3">
+						<div class="vertical-slider">
+							<div class="slider-item">
+								<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row active">
+					<div class="col-12 col-lg-8 col-xl-9">
+						<!--Добавить Fancybox gallery при клике на слайды-->
+						<div class="slider-prev">
+							<div class="slider-item">
+								<a  class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+									<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3">
+						<div class="vertical-slider">
+							<div class="slider-item">
+								<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-12 col-lg-8 col-xl-9">
+						<!--Добавить Fancybox gallery при клике на слайды-->
+						<div class="slider-prev">
+							<div class="slider-item">
+								<a  class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+									<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+							<div class="slider-item">
+								<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+									<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+								</a>
+								<p class="cont-slider">
+									ЖК «МотовилихинSKY» - городской комфорт <br>
+									в экорайоне Перми
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 col-xl-3">
+						<div class="vertical-slider">
+							<div class="slider-item">
+								<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</div>
+							<div class="slider-item">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto technology-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Технологии строительства новостроек <br>
+						на ЖК «МотовилихинSKY»
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<img src="img/tech-img.png" alt="">
+				</div>
+				<div class="col-12 col-lg-6 offset-lg-1">
+					<div class="teck-cont">
+						<ul class="gal-ul">
+							<li>
+								<div class="svg-cont">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="12px"><path fill-rule="evenodd" fill="rgb(36, 90, 62)" d="M13.882,-0.001 L15.996,2.110 L6.103,11.998 L-0.000,5.902 L2.114,3.791 L6.103,7.768 L13.882,-0.001 Z"/></svg>
+								</div>
+								<div class="li-txt">
+									Современная 3-х слойная панель
+									(тяжелый бетон, утеплитель, тяжелый бетон
+								</div>
+							</li>
+							<li>
+								<div class="svg-cont">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="12px"><path fill-rule="evenodd" fill="rgb(36, 90, 62)" d="M13.882,-0.001 L15.996,2.110 L6.103,11.998 L-0.000,5.902 L2.114,3.791 L6.103,7.768 L13.882,-0.001 Z"/></svg>
+								</div>
+								<div class="li-txt">
+									Материалы прошли испытание в условиях Крайнего Севера
+								</div>
+							</li>
+							<li>
+								<div class="svg-cont">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="12px"><path fill-rule="evenodd" fill="rgb(36, 90, 62)" d="M13.882,-0.001 L15.996,2.110 L6.103,11.998 L-0.000,5.902 L2.114,3.791 L6.103,7.768 L13.882,-0.001 Z"/></svg>
+								</div>
+								<div class="li-txt">
+									Высокий контроль в качестве каждого этапа строительства
+								</div>
+							</li>
+							<li>
+								<div class="svg-cont">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="12px"><path fill-rule="evenodd" fill="rgb(36, 90, 62)" d="M13.882,-0.001 L15.996,2.110 L6.103,11.998 L-0.000,5.902 L2.114,3.791 L6.103,7.768 L13.882,-0.001 Z"/></svg>
+								</div>
+								<div class="li-txt">
+									Высокие темпы строительства
+								</div>
+							</li>
+							<li>
+								<div class="svg-cont">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="12px"><path fill-rule="evenodd" fill="rgb(36, 90, 62)" d="M13.882,-0.001 L15.996,2.110 L6.103,11.998 L-0.000,5.902 L2.114,3.791 L6.103,7.768 L13.882,-0.001 Z"/></svg>
+								</div>
+								<div class="li-txt">
+									Контроль соответствия всех строительных ГОСТов.
+								</div>
+							</li>
+						</ul>
+						<div class="citata">
+							Несомненно, Вам будет тепло!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto cosmos-sec cosmo-r">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<div class="cosmo-cont">
+						<h2 class="h2">
+							Оставьте заявку <br>
+							на консультацию строителя
+						</h2>
+						<a href="javascript:void(0)" class="btn-accent2">
+							Поучить консулльтацию
+						</a>
+						<div class="cosmoBoy">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto video-reviews bg-sec">
+		<div class="img-bg" style="background-image: url('img/factors-bg.png')">
+		</div>
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Видеообзор домов ЖК МотовилихинSKY
+					</h2>
+				</div>
+				<div class="col-12">
+					<div class="video-cont">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/mcr2gG_aeiw?list=PLzS3k5Z4o3QNXfv5eSfJjmm7llKoLOFak?ecver=1" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--todo Поправить инициализацию слайдеров. Инициализировать по классу, добавить ко всем слайдерам id и триггеры привязать к этим id-->
+	<section class="section-moto gallery-sec remont-sec ">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Отделка в ЖК «МотовилихинSKY»
+					</h2>
+				</div>
+			</div>
+			<div class="row rem-cont">
+				<div class="col-12 col-lg-6 col-xl-3">
+					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/256/25680aac36e92eb5133286edb67491b4.jpg')">
+						<p class="txt">
+							Система <br>
+							«Теплый пол» <br>
+							в санузлах
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-xl-3">
+					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/126/126df8f48a614f3c2964c24dc8ed280a.jpg')">
+						<p class="txt">
+							Полное остекление балконов и лоджий качественными стеклопакетами
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-xl-3">
+					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/50e/50e06289246c7a08d4ce4073cd3acba2.jpg')">
+						<p class="txt">
+							Стальные панельные радиаторы Prado Classic
+							с термоголовкой
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-xl-3">
+					<div class="item-rem" style="background-image: url('http://spk.perm.ru/upload/iblock/cc3/cc394be128bb44bde33b8325aa831b53.jpg')">
+						<p class="txt">
+							Увеличенные оконные проёмы – светло
+							и уютно в каждой комнате
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xl-9">
+					<!--Добавить Fancybox gallery при клике на слайды-->
+					<div class="slider-prev">
+						<div class="slider-item">
+							<a  class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+								<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</a>
+							<p class="cont-slider">
+							</p>
+						</div>
+						<div class="slider-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</a>
+							<p class="cont-slider">
+							</p>
+						</div>
+						<div class="slider-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</a>
+							<p class="cont-slider">
+							</p>
+						</div>
+						<div class="slider-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+							</a>
+							<p class="cont-slider">
+							</p>
+						</div>
+						<div class="slider-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+							</a>
+							<p class="cont-slider">
+							</p>
+						</div>
+						<div class="slider-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="gallery" href="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg">
+								<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+							</a>
+							<p class="cont-slider">
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 col-xl-3">
+					<div class="vertical-slider">
+						<div class="slider-item">
+							<img  data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+						</div>
+						<div class="slider-item">
+							<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+						</div>
+						<div class="slider-item">
+							<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+						</div>
+						<div class="slider-item">
+							<img data-lazy="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" alt="">
+						</div>
+						<div class="slider-item">
+							<img data-lazy="http://spk.perm.ru/upload/iblock/184/1847696a73a61008281402f911807303.jpg" alt="">
+						</div>
+						<div class="slider-item">
+							<img data-lazy="http://spk.perm.ru/upload/iblock/a38/a38ff4ea29bb6ceaa1219d69b1b75d4e.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto cosmos-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<div class="cosmo-cont">
+						<h2 class="h2">
+							Оставьте заявку <br>
+							на проведение персональной экскурсии по ЖК
+						</h2>
+						<a href="javascript:void(0)" class="btn-accent2">
+							Заказать экскурсию
+						</a>
+						<div class="cosmoBoy">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto plan-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Уникальные планировки ЖК «МотовилихинSKY»
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="slider-plan">
+						<div class="item-pl">
+							<div class="border-i">
+								<div class="prev doneBuild" style="background-image: url('img/plan1.png')">
+
+								</div>
+								<div class="bot-c">
+									<p>
+										Гашкова, 53 - подъезд 5-9 <br>
+										Срок сдачи: 2 кв. 2019 года <br>
+										Готовность: 44%
+									</p>
+									<div class="progres-b">
+										<div class="bp-line" style="width: 44%"></div>
+									</div>
+									<div class="btn-c">
+										<a href="" class="">
+											Планировки
+										</a>
+										<a href="">
+											Скачать прайс
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-pl">
+							<div class="border-i">
+								<div class="prev soonBuild" style="background-image: url('img/plan2.png')">
+
+								</div>
+								<div class="bot-c">
+									<p>
+										Гашкова, 53 - подъезд 5-9 <br>
+										Срок сдачи: 2 кв. 2019 года <br>
+										Готовность: 80%
+									</p>
+									<div class="progres-b">
+										<div class="bp-line" style="width: 80%"></div>
+									</div>
+									<div class="btn-c">
+										<a href="" class="">
+											Планировки
+										</a>
+										<a href="">
+											Скачать прайс
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-pl">
+							<div class="border-i">
+								<div class="prev doneBuild" style="background-image: url('img/plan1.png')">
+
+								</div>
+								<div class="bot-c">
+									<p>
+										Гашкова, 53 - подъезд 5-9 <br>
+										Срок сдачи: 2 кв. 2019 года <br>
+										Готовность: 44%
+									</p>
+									<div class="progres-b">
+										<div class="bp-line" style="width: 44%"></div>
+									</div>
+									<div class="btn-c">
+										<a href="" class="">
+											Планировки
+										</a>
+										<a href="">
+											Скачать прайс
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-pl">
+							<div class="border-i">
+								<div class="prev doneBuild" style="background-image: url('img/plan2.png')">
+
+								</div>
+								<div class="bot-c">
+									<p>
+										Гашкова, 53 - подъезд 5-9 <br>
+										Срок сдачи: 2 кв. 2019 года <br>
+										Готовность: 80%
+									</p>
+									<div class="progres-b">
+										<div class="bp-line" style="width: 80%"></div>
+									</div>
+									<div class="btn-c">
+										<a href="" class="">
+											Планировки
+										</a>
+										<a href="">
+											Скачать прайс
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-pl">
+							<div class="border-i">
+								<div class="prev doneBuild" style="background-image: url('img/plan1.png')">
+
+								</div>
+								<div class="bot-c">
+									<p>
+										Гашкова, 53 - подъезд 5-9 <br>
+										Срок сдачи: 2 кв. 2019 года <br>
+										Готовность: 90%
+									</p>
+									<div class="progres-b">
+										<div class="bp-line" style="width: 90%"></div>
+									</div>
+									<div class="btn-c">
+										<a href="" class="">
+											Планировки
+										</a>
+										<a href="">
+											Скачать прайс
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto cosmos-sec akcii-sec">
+		<div class="container standart">
+			<div class="bg-white">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">
+							Акции
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="akciiSlider">
+							<div class="a-item">
+								<h4>
+									КОСМИЧЕСКИЕ
+									КВАРТИРЫ
+								</h4>
+								<h5 >
+									от 1 450 900 руб!
+								</h5>
+							</div>
+							<div class="a-item">
+								<h3>
+									КУПИТЬ
+									ЛЕГКО
+								</h3>
+							</div>
+							<div class="a-item">
+								<h4>
+									«УМНАЯ ИПОТЕКА»
+								</h4>
+								<h5>
+									от 1 до 5,9%
+									годовых!
+								</h5>
+							</div>
+							<div class="a-item">
+								<h4>
+									КОСМИЧЕСКИЕ
+									КВАРТИРЫ
+								</h4>
+								<h5 >
+									от 1 450 900 руб!
+								</h5>
+							</div>
+							<div class="a-item">
+								<h3>
+									КУПИТЬ
+									ЛЕГКО
+								</h3>
+							</div>
+							<div class="a-item">
+								<h4>
+									«УМНАЯ ИПОТЕКА»
+								</h4>
+								<h5>
+									от 1 до 5,9%
+									годовых!
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<p class="txt-pred">
+							*Застройщик оставляет за собой право изменять и дополнять условия Акции, продлить, прекратить Акцию досрочно при условии окончания пула квартир, участвующих в акции.
+						</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<a href="" class="btn-accBorder">
+						Подробнее об акциях
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto how-buy-section">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Как купить квартиру в Мотовилихинском районе, <br>
+						мкр Вышка 2? — Купить легко!
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12" id="how-buy-slider">
+					<div  class="text-center hb-item" data-toggle="modal" data-target="#how-to-buy-form-6864"  onclick="setFormParam('Как купить -> Ипотека')">
+						<img src="http://spk.perm.ru/upload/iblock/51d/51d10211d294a625e81eb1885cb3d850.png" class="appartment-img-responsive">
+						<div class="how-buy__title">Ипотека</div>
+						<div class="how-buy__text"><span style="background-image: initial; background-color: white;">«Умная ипотека» &nbsp;</span>от застройщика от 1% до 5.9%</div>
+					</div>
+					<div  class="text-center hb-item" data-toggle="modal" data-target="#how-to-buy-form-6865"  onclick="setFormParam('Как купить -> Банки-партнеры')">
+						<img src="http://spk.perm.ru/upload/iblock/f30/f30501c2e4363b2441ceb436ebf43d57.png" class="appartment-img-responsive">
+						<div class="how-buy__title">Банки-партнеры</div>
+						<div class="how-buy__text">Более 12 крупнейших банков-партнеров РФ.&nbsp;<br>
+							Эксклюзивные программы для наших клиентов<br></div>
+					</div>
+					<div  class="text-center hb-item" data-toggle="modal" data-target="#how-to-buy-form-6863"  onclick="setFormParam('Как купить -> Рассрочка')">
+						<img src="http://spk.perm.ru/upload/iblock/f3a/f3a595e0486d90af0eef8fcb727cbb3b.png" class="appartment-img-responsive">
+						<div class="how-buy__title">Рассрочка</div>
+						<div class="how-buy__text">Доступная рассрочка от застройщика</div>
+					</div>
+					<div  class="text-center hb-item" data-toggle="modal" data-target="#how-to-buy-form-6862"  onclick="setFormParam('Как купить -> Маткапитал')">
+						<img src="http://spk.perm.ru/upload/iblock/4e4/4e408e2c04203b86d5f5a277a13e9f96.png" class="appartment-img-responsive">
+						<div class="how-buy__title">Маткапитал</div>
+						<div class="how-buy__text">С помощью материнского капитала и других видов сертификатов</div>
+					</div>
+					<div  class="text-center hb-item" data-toggle="modal" data-target="#how-to-buy-form-6861"  onclick="setFormParam('Как купить -> Трейд-ин')">
+						<img src="http://spk.perm.ru/upload/iblock/a5c/a5c8a41db99e23abe47c3871927cad92.png" class="appartment-img-responsive">
+						<div class="how-buy__title">Трейд-ин</div>
+						<div class="how-buy__text">Трейд-ин &nbsp;- обмен вторичного жилья на новостройку</div>
+					</div>
+				</div>
+				<div class="col-12 text-center">
+					<a class="btn-accent2" onclick="appOrderForm('#appCalc', 'Как купить -> получить индивидуальный расчет')" href="#appCalc" data-toggle="modal">Получить индивидуальный расчет</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto gallery-sec feedback-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Отзывы о ЖК «МотовилихинSKY»
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xl-9">
+					<!--Добавить Fancybox gallery при клике на слайды-->
+					<div class="slider-prev">
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+								<a class="video-link" data-fancybox="" href="https://www.youtube.com/watch?v=mcr2gG_aeiw" data-rel="media">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 col-xl-3">
+					<div class="vertical-slider">
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="prev" style="background-image: url('img/maimap.png')">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="slider-feedBak">
+						<div class="a-item">
+							<div class="fb-c">
+								<div class="user-inf">
+									<div class="ava">
+										<img src="img/ava.png" alt="">
+									</div>
+									<div class="date-n">
+										26.02.2018 <br>
+										Иван Иванов
+									</div>
+								</div>
+								<div class="content-b content">
+									<p>
+										Товарищи! реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="a-item">
+							<div class="fb-c">
+								<div class="user-inf">
+									<div class="ava">
+										<img src="img/ava.png" alt="">
+									</div>
+									<div class="date-n">
+										26.02.2018 <br>
+										Иван Иванов
+									</div>
+								</div>
+								<div class="content-b content">
+									<p>
+										Товарищи! реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="a-item">
+							<div class="fb-c">
+								<div class="user-inf">
+									<div class="ava">
+										<img src="img/ava.png" alt="">
+									</div>
+									<div class="date-n">
+										26.02.2018 <br>
+										Иван Иванов
+									</div>
+								</div>
+								<div class="content-b content">
+									<p>
+										Товарищи! реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="a-item">
+							<div class="fb-c">
+								<div class="user-inf">
+									<div class="ava">
+										<img src="img/ava.png" alt="">
+									</div>
+									<div class="date-n">
+										26.02.2018 <br>
+										Иван Иванов
+									</div>
+								</div>
+								<div class="content-b content">
+									<p>
+										Товарищи! реализация намеченных плановых заданий играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-moto buildMonth-sec">
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Ход строительства ЖК «МотовилихинSKY»
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="tabs-c">
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Январь
+						</a>
+					</div>
+					<div class="t-item active">
+						<a href="javascript:void(0);">
+							Февраль
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Март
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Апрель
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Май
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Июнь
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Июль
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Август
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Сентябрь
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Октябрь
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Ноябрь
+						</a>
+					</div>
+					<div class="t-item">
+						<a href="javascript:void(0);">
+							Декабрь
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-cont">
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row active">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="build-item">
+							<a class="gal-i" data-caption="Яркие фасады ЖК «МотовилихинSky»" data-fancybox="build1" href="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg" tabindex="0">
+								<img alt="" class="" style="opacity: 1;" src="http://spk.perm.ru/upload/resize_cache/iblock/66b/880_524_2/66b9875f166c0b2e65f9c3ea76a3ebb6.jpg">
+							</a>
+							<p>
+								Март 2018 <br>
+								ул. Гашкова, 53 (Позиция 9).<br><br>
+								Ведутся работы по обустройству придомовой территорий.<br>
+								Ведутся работы по остеклению 5, 6, 7, 8 подъездов. Завершены работы по горизонтальной планировки территорий.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="section-moto docs-sec bg-sec">
+		<div class="img-bg" style="background-image: url('img/factors-bg.png')">
+		</div>
+		<div class="container standart">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="h2">
+						Документы
+					</h2>
+				</div>
+			</div>
+			<div class="tabs-c">
+				<div class="t-item active">
+					<a href="javascript:void(0);">
+						Разрешительная документация
+					</a>
+				</div>
+				<div class="t-item">
+					<a href="javascript:void(0);">
+						Проектные декларации
+					</a>
+				</div>
+				<div class="t-item">
+					<a href="javascript:void(0);">
+						Финансовые результаты
+					</a>
+				</div>
+			</div>
+			<div class="tab-cont">
+				<div class="row active">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+							<div class="col-12 col-md-6 col-lg-6">
+								<a href="/upload/iblock/700/700cce1abce55837b294fe6bdd674013.pdf" class="docs-slider__file-item" tabindex="0">
+									<span class="type">PDF</span>
+									<span class="fname">ШАБЛОН ДДУ ул. Гашкова, 53</span> <span class="full-type">(PDF, 828 Кб)</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+<div id="my-footer">
+	<div class="container standart">
+		<div class="row">
+			<div class="col-12 col-lg-4">
+				<a href="/" class="logo-f">
+					<img src="img/logoF.png" alt="">
+				</a>
+				<p class="sale-txt">
+					ПРОДАЖА КВАРТИР <br>
+					(342) 214-11-34 <br>
+					Пермь, ул. Монастырская, 12б.
+				</p>
+			</div>
+			<div class="col-12 col-lg-8">
+				<p>
+					Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ.
+					<br>
+					Все права на публикуемые на сайте материалы принадлежат АО "СтройПанельКомплект"  2008-2018
+				</p>
+			</div>
+			<div class="col-12 col-lg-4">
+				<div class="socials">
+					<div class="item-sc">
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="11px">
+								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M19.182,8.891 C18.567,8.218 17.911,7.580 17.218,6.983 C16.620,6.401 16.572,6.077 17.063,5.424 C17.580,4.719 18.149,4.012 18.666,3.311 C19.201,2.677 19.629,1.964 19.934,1.200 C20.089,0.697 19.959,0.470 19.416,0.395 C19.323,0.374 19.227,0.366 19.132,0.370 L15.972,0.370 C15.631,0.344 15.319,0.555 15.222,0.873 C15.041,1.301 14.860,1.753 14.654,2.205 C14.187,3.217 13.559,4.150 12.793,4.971 C12.612,5.147 12.431,5.374 12.146,5.272 C11.784,5.147 11.681,4.568 11.681,4.367 L11.681,0.820 C11.603,0.317 11.500,0.091 10.982,-0.010 L7.671,-0.010 C7.317,-0.011 6.983,0.146 6.766,0.417 C6.638,0.571 6.585,0.669 6.869,0.719 C7.377,0.794 7.763,1.202 7.800,1.700 C7.921,2.551 7.938,3.411 7.852,4.265 C7.831,4.516 7.770,4.762 7.671,4.994 C7.515,5.371 7.257,5.421 6.921,5.221 C6.628,5.011 6.382,4.746 6.197,4.441 C5.420,3.358 4.769,2.194 4.257,0.971 C4.146,0.630 3.823,0.395 3.455,0.390 C2.498,0.367 1.566,0.367 0.610,0.393 C0.041,0.393 -0.140,0.669 0.092,1.172 C1.080,3.421 2.311,5.563 3.764,7.559 C4.504,8.585 5.455,9.449 6.557,10.098 C7.829,10.776 9.275,11.082 10.722,10.978 C11.421,10.954 11.627,10.777 11.653,10.098 C11.651,9.645 11.757,9.198 11.963,8.791 C12.080,8.491 12.425,8.340 12.734,8.454 C12.802,8.479 12.865,8.517 12.920,8.564 C13.116,8.688 13.291,8.841 13.438,9.017 C13.825,9.419 14.187,9.847 14.602,10.249 C15.065,10.770 15.759,11.041 16.464,10.977 L19.438,10.977 C19.904,10.953 20.162,10.396 19.878,9.871 C19.684,9.520 19.450,9.190 19.180,8.891 L19.182,8.891 Z"></path>
+							</svg>
+						</a>
+					</div>
+					<div class="item-sc">
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="20px">
+								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M10.586,-0.005 L7.939,-0.005 C4.980,-0.005 3.075,1.921 3.075,4.915 L3.075,7.182 L0.431,7.182 C0.200,7.180 0.010,7.361 0.007,7.589 C0.007,7.591 0.007,7.594 0.007,7.596 L0.007,10.876 C0.004,11.103 0.189,11.289 0.420,11.292 C0.424,11.292 0.427,11.292 0.431,11.292 L3.078,11.292 L3.078,19.596 C3.075,19.824 3.260,20.010 3.491,20.013 C3.494,20.013 3.498,20.013 3.502,20.013 L6.971,20.013 C7.201,20.016 7.391,19.834 7.394,19.607 C7.394,19.603 7.394,19.600 7.394,19.596 L7.394,11.292 L10.489,11.292 C10.720,11.295 10.909,11.114 10.912,10.886 C10.912,10.883 10.912,10.879 10.912,10.876 L10.912,7.596 C10.894,7.371 10.709,7.194 10.480,7.182 L7.359,7.182 L7.359,5.253 C7.359,4.316 7.571,3.848 8.814,3.848 L10.585,3.848 C10.816,3.851 11.006,3.669 11.009,3.441 C11.009,3.438 11.009,3.434 11.009,3.431 L11.009,0.411 C11.012,0.185 10.827,-0.002 10.596,-0.005 C10.593,-0.005 10.590,-0.005 10.586,-0.005 Z"></path>
+							</svg>
+						</a>
+					</div>
+					<div class="item-sc">
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
+								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M16.314,0.007 L1.691,0.007 C0.764,0.019 0.016,0.768 0.003,1.694 L0.003,16.318 C0.016,17.245 0.764,17.993 1.691,18.006 L16.314,18.006 C17.241,17.993 17.989,17.245 18.001,16.318 L18.001,1.694 C17.989,0.768 17.241,0.019 16.314,0.007 ZM12.310,2.752 C12.302,2.139 12.793,1.635 13.406,1.627 C13.416,1.627 13.425,1.627 13.435,1.627 L14.841,1.627 C15.454,1.620 15.957,2.110 15.965,2.723 C15.965,2.733 15.965,2.742 15.965,2.752 L15.965,4.434 C15.973,5.047 15.482,5.550 14.869,5.559 C14.860,5.559 14.850,5.559 14.841,5.559 L13.431,5.559 C12.818,5.565 12.316,5.072 12.310,4.459 C12.310,4.451 12.310,4.442 12.310,4.434 L12.310,2.752 ZM9.002,5.033 C11.196,5.033 12.974,6.812 12.974,9.005 C12.974,11.199 11.196,12.977 9.002,12.977 C6.809,12.977 5.030,11.199 5.030,9.005 L5.030,9.005 C5.041,6.815 6.813,5.044 9.002,5.033 ZM16.314,16.879 L1.691,16.879 C1.384,16.883 1.132,16.638 1.129,16.331 C1.128,16.327 1.128,16.321 1.129,16.317 L1.129,7.635 L4.116,7.635 C3.989,8.081 3.918,8.541 3.905,9.005 C3.942,11.820 6.254,14.072 9.069,14.035 C11.832,13.998 14.062,11.767 14.099,9.005 C14.100,8.540 14.029,8.078 13.888,7.635 L16.876,7.635 L16.876,16.317 C16.880,16.624 16.635,16.876 16.328,16.879 C16.323,16.879 16.319,16.879 16.314,16.879 Z"></path>
+							</svg>
+						</a>
+					</div>
+					<div class="item-sc">
+						<a href="">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="19px">
+								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M15.702,17.225 C15.527,18.018 14.861,18.613 14.042,18.709 C12.040,18.956 10.022,19.055 8.005,19.006 C5.986,19.057 3.967,18.959 1.963,18.713 C1.139,18.630 0.465,18.029 0.303,17.229 C0.052,16.008 -0.049,14.761 0.001,13.515 C-0.049,12.271 0.053,11.026 0.303,9.805 C0.475,9.010 1.145,8.411 1.967,8.321 C3.969,8.074 5.987,7.974 8.005,8.024 C10.020,7.975 12.037,8.074 14.038,8.321 C14.862,8.404 15.536,9.005 15.698,9.805 L15.702,9.798 C15.953,11.019 16.055,12.266 16.005,13.511 C16.055,14.757 15.953,16.004 15.702,17.225 ZM4.529,9.805 L1.209,9.805 L1.209,10.992 L2.265,10.992 L2.265,17.077 L3.321,17.077 L3.321,10.992 L4.529,10.992 L4.529,9.805 ZM7.548,11.586 L6.491,11.586 L6.491,15.597 C6.190,15.890 6.190,16.039 5.888,16.039 C5.725,16.028 5.596,15.901 5.585,15.742 L5.585,11.586 L4.677,11.586 L4.677,15.742 C4.686,16.044 4.738,16.344 4.831,16.632 C4.976,16.815 5.198,16.925 5.434,16.930 C5.864,16.915 6.260,16.693 6.491,16.336 L6.491,16.928 L7.548,16.928 L7.548,11.586 ZM11.019,15.296 L11.019,13.070 C11.054,12.717 11.003,12.361 10.868,12.031 C10.736,11.719 10.452,11.496 10.113,11.438 C9.811,11.438 9.510,11.734 9.208,12.031 L9.208,9.805 L8.302,9.805 L8.302,16.777 L9.359,16.777 L9.359,16.335 C9.552,16.659 9.886,16.878 10.264,16.928 C10.717,16.928 10.868,16.632 11.019,16.335 C11.170,16.187 11.170,15.738 11.170,15.296 L11.019,15.296 ZM14.791,14.410 L14.489,14.410 L14.489,13.519 C14.553,13.100 14.444,12.672 14.187,12.331 C13.960,11.969 13.562,11.746 13.130,11.738 C12.658,11.745 12.215,11.963 11.924,12.327 C11.716,12.689 11.611,13.100 11.621,13.515 L11.621,15.443 C11.558,15.863 11.667,16.290 11.924,16.631 C12.237,16.971 12.668,17.183 13.131,17.224 C13.604,17.216 14.048,16.998 14.339,16.631 C14.490,16.335 14.641,16.335 14.641,16.038 L14.641,15.296 L13.729,15.296 L13.729,15.890 C13.582,16.038 13.578,16.187 13.280,16.187 C12.981,16.187 12.830,15.887 12.830,15.445 L12.830,14.554 L14.792,14.554 L14.791,14.410 ZM12.830,13.218 C12.830,12.773 12.978,12.476 13.280,12.476 L13.286,12.476 C13.585,12.476 13.736,12.775 13.736,13.218 L13.736,13.660 L12.830,13.660 L12.830,13.218 ZM9.808,16.335 C9.661,16.335 9.510,16.187 9.359,16.038 L9.359,12.773 C9.506,12.625 9.657,12.476 9.808,12.476 C9.959,12.476 10.111,12.775 10.111,13.218 L10.111,15.593 C10.111,16.038 10.111,16.335 9.808,16.335 ZM12.827,7.131 L12.830,7.131 L12.827,7.134 L12.827,7.131 ZM11.773,6.537 C11.496,6.843 11.125,7.051 10.717,7.131 C10.415,7.131 10.113,7.131 10.113,6.834 C9.990,6.553 9.938,6.248 9.962,5.943 L9.962,1.787 L10.868,1.787 L10.868,5.943 C10.879,6.103 11.008,6.230 11.170,6.240 C11.471,6.240 11.622,6.240 11.773,5.798 L11.773,1.790 L12.827,1.790 L12.827,7.131 L11.773,7.131 L11.773,6.537 ZM8.759,6.537 C8.532,6.899 8.134,7.123 7.702,7.131 C7.301,7.142 6.915,6.981 6.646,6.689 C6.438,6.327 6.333,5.916 6.344,5.501 L6.344,3.571 C6.344,2.978 6.344,2.681 6.645,2.386 C6.872,2.025 7.270,1.801 7.701,1.793 C8.108,1.750 8.508,1.917 8.758,2.235 C9.062,2.616 9.221,3.088 9.208,3.571 L9.208,5.352 L9.209,5.350 C9.209,5.944 9.061,6.389 8.759,6.537 ZM8.151,3.274 C8.151,2.830 8.000,2.533 7.701,2.533 C7.403,2.533 7.252,2.832 7.252,3.274 L7.252,5.649 C7.252,6.094 7.403,6.392 7.701,6.392 C8.000,6.392 8.151,6.092 8.151,5.649 L8.151,3.274 ZM4.981,7.134 L3.924,7.134 L3.924,4.314 C3.811,3.552 3.608,2.804 3.321,2.087 C3.003,1.420 2.751,0.724 2.566,0.009 L3.774,0.009 L4.529,2.681 L5.132,0.009 L6.344,0.009 L4.981,4.314 L4.981,7.134 Z"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<a class="all-c" href="">
+					ВСЕ КОНТАКТЫ
+				</a>
+			</div>
+			<div class="col-12 col-lg-8 usr-i">
+				<a class="izya-footer-politic" target="_blank" download="" href="https://datais.ru/documents/spk.perm.ru/ПОЛИТИКА БЕЗОПАСНОСТИ САЙТА SPK.PERM.RU.pdf">Политика конфиденциальности</a>
+				<p>
+					Ваши персональные данные обрабатываются на сайте в целях его функционирования, если Вы не согласны, то Вы должны покинуть сайт. В противном случае это будет являться согласием на обработку Ваших персональных данных.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--For all pages START-->
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+<script src="js/common.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
+<!--For all pages END-->
+<!--For this pages START-->
+
+
+<div data-fancybox="" data-src="#how-to-buy-form-6864">
+	<div id="how-to-buy-form-6864" class="landing-modal" style="display: none;" aria-hidden="false">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			</div>
+			<div class="modal-body">
+				<h4 style="text-align: center;"><span style="background-image: initial; background-color: white;">«Умная ипотека» &nbsp;</span>от
+					застройщика от 1% до 5.9%</h4>
+				 <span style="background-color: #ffffff;">
+					<p style="text-align: center;">
+						 Почему ипотека от застройщика – Умная? <br>
+						Оставьте ваши контакты и мы свяжемся с вами!
+					</p>
+				 </span>
+				<ul style="background-color: #ffffff;">
+				</ul>
+				<div id="comp_811169ac383332de71f0a5dfc87b89a4">
+					<div class="row">
+						<form name="MODAL_ORDER_LANGING" action="/quarters/zhk-mmotovilihinsky/?CODE=zhk-mmotovilihinsky"
+								method="POST" enctype="multipart/form-data"><input type="hidden" name="bxajaxid"
+																									id="bxajaxid_811169ac383332de71f0a5dfc87b89a4_8BACKi"
+																									value="811169ac383332de71f0a5dfc87b89a4"><input
+								type="hidden" name="AJAX_CALL" value="Y">
+							<input type="hidden" name="sessid" id="sessid" value="e5694062cfa3a06c1426c82cfdb2a4b3"><input
+									type="hidden" name="WEB_FORM_ID" value="23"> <input type="hidden" value="6864"
+																										 name="ajax_opt_add">
+							<div class="col-12 appartaments-ui-field">
+								<input type="text" required="" placeholder="Имя *" name="form_text_118" value="" size="0"></div>
+							<div class="col-12 appartaments-ui-field">
+								<input type="tel" required="" placeholder="Телефон *" name="form_text_117"
+										 value="" size="0"></div>
+							<input type="hidden" field="URL" name="form_hidden_119"
+									 value="http://spk.perm.ru/quarters/zhk-mmotovilihinsky/"> <input type="hidden"
+																															field="PARAMS"
+																															name="form_hidden_120"
+																															value="">
+							<div class="col-12 appartaments-ui-field">
+								<p>
+									**заполнение данной формы является автоматическим согласием на обработку Ваших персональных
+									данных.
+								</p>
+							</div>
+							<div class="col-12 appartaments-ui-field text-center">
+								<input type="submit" class="btn btn__color-1" name="web_form_submit" value="Отправить">
+								<p class="izya-form-notify">Нажимая на кнопку отправить, я даю <a target="_blank" download=""
+																														href="https://datais.ru/documents/spk.perm.ru/Согласие на обработку ПД.pdf">согласие
+									на обработку своих персональных данных</a></p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!--For this pages END-->
+
+<script type="text/javascript">
+	/*For this page START*/
+	var myMap,
+			myCollection,
+			sportColl,
+			cafeColl,
+			childColl,
+			shopColl,
+			eduColl,
+			busColl,
+			medColl;
+
+	// Дождёмся загрузки API и готовности DOM.
+	ymaps.ready(initMap);
+	function mapColAdd(colName) {
+		$("#infrastructure__list li").each(function() {
+			var i = new ymaps.Placemark([$(this).attr("lat"), $(this).attr("lon")], {
+				balloonContentBody: $(this).attr("label"),
+				hintContent: $(this).attr("label")
+			},{
+				iconImageHref: $(this).attr("icon"),
+				iconImageSize: [32, 44],
+				iconLayout: 'default#image'
+			});
+
+			if($(this).attr("col") === 'shop' && (colName === 'shop' || colName === 'all') ){
+				shopColl.add(i);
+				//myMap.setBounds(shopColl.getBounds());
+			}
+			else if($(this).attr("col") === 'edu' && (colName === 'edu' || colName === 'all')){
+				eduColl.add(i);
+				//myMap.setBounds(eduColl.getBounds());
+			}
+			else if($(this).attr("col") === 'child' && (colName === 'child' || colName === 'all')){
+				childColl.add(i);
+				//myMap.setBounds(childColl.getBounds());
+			}
+			else if($(this).attr("col") === 'med' && (colName === 'med' || colName === 'all')){
+				medColl.add(i);
+				//myMap.setBounds(medColl.getBounds());
+			}
+			else if($(this).attr("col") === 'sport' && (colName === 'sport' || colName === 'all')){
+				sportColl.add(i);
+				//myMap.setBounds(sportColl.getBounds());
+				console.log('sportFunc');
+			}
+			else if($(this).attr("col") === 'bus' && (colName === 'bus' || colName === 'all')){
+				busColl.add(i);
+				//myMap.setBounds(busColl.getBounds());
+			}
+			else if($(this).attr("col") === 'cafe' && (colName === 'cafe' || colName === 'all')){
+				cafeColl.add(i);
+				//myMap.setBounds(cafeColl.getBounds());
+			}else if($(this).attr("col") === 'zk'){
+				myMap.geoObjects.add(i);
+			}
+
+			//myCollection.add(i);
+			//myMap.geoObjects.add(i);
+		});
+
+		if(colName === 'all'){
+			myMap.geoObjects.add(myCollection).add(sportColl).add(cafeColl).add(childColl).add(shopColl).add(eduColl).add(busColl).add(medColl);
+			myMap.setBounds(medColl.getBounds());
+		}
+		if(colName === 'sport'){
+			myMap.geoObjects.add(sportColl);
+			myMap.setBounds(sportColl.getBounds());
+
+		}
+		if(colName === 'cafe'){
+			myMap.geoObjects.add(cafeColl);
+			myMap.setBounds(cafeColl.getBounds());
+		}
+		if(colName === 'child'){
+			myMap.geoObjects.add(childColl);
+			myMap.setBounds(childColl.getBounds());
+		}
+		if(colName === 'shop'){
+			myMap.geoObjects.add(shopColl);
+			myMap.setBounds(shopColl.getBounds());
+		}
+		if(colName === 'edu'){
+			myMap.geoObjects.add(eduColl);
+			myMap.setBounds(eduColl.getBounds());
+		}
+		if(colName === 'bus'){
+			myMap.geoObjects.add(busColl);
+			myMap.setBounds(busColl.getBounds());
+		}
+		if(colName === 'med'){
+			myMap.geoObjects.add(medColl);
+			myMap.setBounds(medColl.getBounds());
+		}
+	}
+	function initMap(){
+		//var i;
+		myMap = new ymaps.Map("mapInfo", {
+			center: [$("#infrastructure__list li").eq(0).attr("lat"), $("#infrastructure__list li").eq(0).attr("lon")],
+			zoom: 15,
+			behaviors: ["default"],
+			controls: ['routeButtonControl']
+		});
+
+		myMap.options.set('minZoom', 12);
+		myMap.options.set('maxZoom', 17);
+
+		//Определяем все коллекции для группировки маркеров
+		myCollection = new ymaps.GeoObjectCollection(null, {});
+		sportColl = new ymaps.GeoObjectCollection(null, {});
+		cafeColl = new ymaps.GeoObjectCollection(null, {});
+		childColl = new ymaps.GeoObjectCollection(null, {});
+		shopColl = new ymaps.GeoObjectCollection(null, {});
+		eduColl = new ymaps.GeoObjectCollection(null, {});
+		busColl = new ymaps.GeoObjectCollection(null, {});
+		medColl = new ymaps.GeoObjectCollection(null, {});
+
+		myMap.controls.add("zoomControl"),
+		myMap.behaviors.disable("scrollZoom"),
+		/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (myMap.behaviors.disable("drag"),
+		$(".fullscreenmap").css("display", "flex")),
+		$(".fullscreenmap").click(function() {
+			$("#mapInfo").toggleClass("fs"), $(".fullscreenmap").toggleClass("fs"), myMap.container.fitToViewport(), boolmap ? myMap.behaviors.enable("drag") : myMap.behaviors.disable("drag"), boolmap = !boolmap
+		});
+
+		// Создаём макет содержимого.
+		var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+				'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+		);
+
+		mapColAdd('all');
+
+
+
+		$('.map-c .btn-trigger-cc .btn-trigger').on('click', function (){
+			//Чистим карту
+			myCollection.removeAll();
+			sportColl.removeAll();
+			cafeColl.removeAll();
+			childColl.removeAll();
+			shopColl.removeAll();
+			eduColl.removeAll();
+			busColl.removeAll();
+			medColl.removeAll();
+
+			try{
+				mapColAdd($(this).data().col);
+				$('.btn-trigger-ccc').css({"margin-top":"0"});
+				$('.map-c .object-otput').fadeIn();
+				$('.map-c .btn-trigger-cc .btn-trigger').removeClass('active');
+				$(this).addClass('active');
+
+
+				$('.map-c .object-otput ul li').hide();
+
+				if($(this).data().col !== "all"){
+					$('.map-c .object-otput ul li[col="'+$(this).data().col+'"]').fadeIn();
+				}else{
+					$('.map-c .object-otput ul li').fadeIn();
+				}
+			} catch (err){
+				console.error('Ошибка ' + err.name + ":" + err.message + "\n" + err.stack);
+				$('.map-c .btn-trigger-cc .btn-trigger').removeClass('active');
+				$('.map-c .object-otput').hide();
+				$('.btn-trigger-ccc').css({"margin-top":"267px"});
+			}
+		});
+
+		$('#infrastructure__list li').on('click', function() {
+			setCenter(this);
+		});
+
+
+	}
+
+	function setCenter(i) {
+		myMap.setCenter([$(i).attr("lat"), $(i).attr("lon")]), myMap.setZoom(17), $("#infrastructure__list li").removeClass("active"), $(i).addClass("active")
+	}
+
+	function fbSameSlides(){
+		var arrFB = [], maxVal;
+		$('.slider-feedBak .a-item .fb-c').each(function(){
+			arrFB.push($(this).height());
+		});
+
+		maxVal = Math.max.apply(null, arrFB)
+
+		$('.slider-feedBak .a-item .fb-c').each(function(){
+			$(this).height(maxVal);
+		});
+	};
+
+	$(function() {
+
+
+		featuresSlider();
+		factorsSlider();
+		verticalSlider();
+		sliderprevSlider();
+		planSlider();
+		akciiSlider();
+		howBuySlider();
+		feedbackSlider();
+		fbSameSlides();
+		//yandexPoints();
+
+
+
+	});
+
+
+
+	/*For this page END*/
+
+	/*For all pages START*/
+	$(function() {
+
+
+
+		$(window).resize(function () {
+//			$('.headSubmOpen').addClass('active');
+//			$('.js-headSubm').slideDown();
+		});
+	});
+	/*For all pages END*/
+</script>
+
+</body>
+</html>
