@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d4d3dbb-f277-4185-8481-0ccfe0eb9775" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/pageCommon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/page.min.css" afterPath="$PROJECT_DIR$/app/css/page.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sassSingle/page.sass" afterPath="$PROJECT_DIR$/app/sassSingle/page.sass" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,7 +36,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="292">
+                <state relative-caret-position="4012">
                   <caret line="1099" column="26" selection-start-line="1099" selection-start-column="26" selection-end-line="1099" selection-end-column="26" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -108,8 +107,8 @@
           <file leaf-file-name="pageCommon.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/js/pageCommon.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -118,7 +117,7 @@
           <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/contact.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
+                <state relative-caret-position="4097">
                   <caret line="1104" column="41" selection-start-line="1104" selection-start-column="41" selection-end-line="1105" selection-end-column="36" />
                   <folding>
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -189,7 +188,7 @@
           <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gulpfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
+                <state relative-caret-position="1513">
                   <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
                   <folding />
                 </state>
@@ -243,7 +242,7 @@
           <file leaf-file-name="main.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="858">
+                <state relative-caret-position="836">
                   <caret line="1087" column="9" selection-start-line="1087" selection-start-column="9" selection-end-line="1087" selection-end-column="9" />
                   <folding>
                     <element signature="e#3624#4376#0" expanded="false" />
@@ -262,15 +261,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.sass" pinned="false" current-in-tab="false">
+          <file leaf-file-name="page.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/sassSingle/page.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="573">
-                  <caret line="188" column="6" selection-start-line="188" selection-start-column="6" selection-end-line="188" selection-end-column="6" />
+                <state relative-caret-position="144">
+                  <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
                   <folding>
                     <element signature="e#1857#1895#0" expanded="false" />
-                    <element signature="e#1935#2759#0" expanded="false" />
-                    <element signature="e#2079#2283#0" expanded="false" />
+                    <element signature="e#2107#2311#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -296,7 +294,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="372">
@@ -344,11 +342,11 @@
         <option value="$PROJECT_DIR$/app/sass/_media.sass" />
         <option value="$PROJECT_DIR$/app/sass/main.sass" />
         <option value="$PROJECT_DIR$/app/sassSingle/media.sass" />
-        <option value="$PROJECT_DIR$/app/sassSingle/page.sass" />
         <option value="$PROJECT_DIR$/app/contact.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/js/pageCommon.js" />
+        <option value="$PROJECT_DIR$/app/sassSingle/page.sass" />
       </list>
     </option>
   </component>
@@ -461,8 +459,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -555,7 +553,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../motoSky2/layouts" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="D:\PraWeb\BeginBuild\Layouts\node_modules\gulp" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -665,7 +663,8 @@
       <workItem from="1522647671379" duration="19015000" />
       <workItem from="1522725338978" duration="8728000" />
       <workItem from="1522900769694" duration="16534000" />
-      <workItem from="1522987727961" duration="1124000" />
+      <workItem from="1522987727961" duration="1639000" />
+      <workItem from="1523009107376" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="layouts typeless">
       <created>1507611710743</created>
@@ -765,11 +764,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522923013678</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="newBuild2 for single pages">
+      <created>1522988873417</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1522988873417</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536610000" />
+    <option name="totallyTimeSpent" value="537302000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -781,11 +787,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5693642" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.43063584" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15565032" sideWeight="0.5751445" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15565032" sideWeight="0.4248555" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19300225" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -836,7 +842,8 @@
     <MESSAGE value="header and footer" />
     <MESSAGE value="end" />
     <MESSAGE value="newBuild for single pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="newBuild for single pages" />
+    <MESSAGE value="newBuild2 for single pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="newBuild2 for single pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,14 +852,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4224">
@@ -1459,29 +1458,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sassSingle/media.sass" />
-    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="1087" column="9" selection-start-line="1087" selection-start-column="9" selection-end-line="1087" selection-end-column="9" />
-          <folding>
-            <element signature="e#3624#4376#0" expanded="false" />
-            <element signature="e#9702#10182#0" expanded="false" />
-            <element signature="e#12525#12610#0" expanded="false" />
-            <element signature="e#12622#12808#0" expanded="false" />
-            <element signature="e#13302#13576#0" expanded="false" />
-            <element signature="e#13587#13850#0" expanded="false" />
-            <element signature="e#13863#14343#0" expanded="false" />
-            <element signature="e#14797#16049#0" expanded="false" />
-            <element signature="e#17430#17787#0" expanded="false" />
-            <element signature="e#17804#18285#0" expanded="false" />
-            <element signature="e#18295#18524#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="4097">
           <caret line="1104" column="41" selection-start-line="1104" selection-start-column="41" selection-end-line="1105" selection-end-column="36" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1548,21 +1527,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sassSingle/page.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="188" column="6" selection-start-line="188" selection-start-column="6" selection-end-line="188" selection-end-column="6" />
-          <folding>
-            <element signature="e#1857#1895#0" expanded="false" />
-            <element signature="e#1935#2759#0" expanded="false" />
-            <element signature="e#2079#2283#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="4012">
           <caret line="1099" column="26" selection-start-line="1099" selection-start-column="26" selection-end-line="1099" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1631,8 +1598,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="1513">
           <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/pageCommon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1645,11 +1627,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/pageCommon.js">
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="836">
+          <caret line="1087" column="9" selection-start-line="1087" selection-start-column="9" selection-end-line="1087" selection-end-column="9" />
+          <folding>
+            <element signature="e#3624#4376#0" expanded="false" />
+            <element signature="e#9702#10182#0" expanded="false" />
+            <element signature="e#12525#12610#0" expanded="false" />
+            <element signature="e#12622#12808#0" expanded="false" />
+            <element signature="e#13302#13576#0" expanded="false" />
+            <element signature="e#13587#13850#0" expanded="false" />
+            <element signature="e#13863#14343#0" expanded="false" />
+            <element signature="e#14797#16049#0" expanded="false" />
+            <element signature="e#17430#17787#0" expanded="false" />
+            <element signature="e#17804#18285#0" expanded="false" />
+            <element signature="e#18295#18524#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sassSingle/page.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+          <folding>
+            <element signature="e#1857#1895#0" expanded="false" />
+            <element signature="e#2107#2311#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
